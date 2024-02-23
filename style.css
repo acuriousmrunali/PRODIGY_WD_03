@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+    background:linear-gradient(135deg,rgb(24, 228, 255),rgb(200, 255, 0));
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+.input[type="text"]
+
+{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ebe9e9;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+}
+button{
+    background:linear-gradient(135deg,rgb(78, 78, 204),rgb(234, 0, 255));
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 50%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background:linear-gradient(135deg,rgb(0, 195, 255),rgb(255, 0, 242));
+    color: black;
+}
+.gameBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.grid
+{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.cell{
+    background:linear-gradient(135deg,rgb(255, 230, 216),rgb(133, 243, 247));
+    border: 2px solid #30d7f5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #333;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    user-select: none;
+}
+.cell:hover{
+    background: #ffe9e9;
+}
+.gameEnd{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameEnd{
+    display: none;
+}
